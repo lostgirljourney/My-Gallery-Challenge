@@ -1,0 +1,359 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	position: inherit;
+	text-align: center;
+	font-style: normal;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #322E2B;
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #87998C;
+}
+
+#profile {
+	margin: 41px auto 0;
+	width: 217px;
+}
+
+#pfp {
+	width: 156px;
+	margin: 19px auto 0;
+	border-style: none;
+	border-radius: 16px;
+}
+
+#artist-name {
+	margin: 16px auto 0;
+	width: 186px;
+	height: 29px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #4e5150;
+	cursor: default;
+}
+
+#artist-loc {
+	margin: 8px auto 0;
+	width: 120px;
+	height: 17px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #a9a9a9;
+	cursor: default;
+}
+
+#stats {
+	display: grid;
+	grid-template-columns: repeat(3);
+	width: 348px;
+	height: 67px;
+	place-items: center;
+	margin: 24px auto 0;
+}
+
+.stat-box {
+	grid-row: 1;
+	width: 100px;
+	height: 35px;
+	margin: 15px 24px 0 0;
+	padding-top: 15px;
+	padding-bottom: 17px;
+	background-color: #e5e5e5;
+	border-style: none;
+	border-radius: 16px;
+	cursor: pointer;
+}
+
+.nos {
+	width: 37px;
+	height: 18px;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #4e5150;
+}
+
+.about {
+	width: 67px;
+	height: 14px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #bdbdbd;
+	margin-top: 3px;
+}
+
+#gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(310px, auto);
+	margin: 81px auto 0;
+	width: 960px;
+	height: 961px;
+}
+
+.img-box {
+	border-style: none;
+	border-radius: 12px;
+	filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 1));
+	filter: grayscale(0.5);
+	transition: all 0.8s ease-in-out;
+	cursor: pointer;
+}
+
+.img-box:hover {
+	filter: grayscale(0);
+	transform: scale(1.03);
+}
+
+#one {
+	grid-row: 1;
+	grid-column: 1;
+	margin: 0 16px 16px 0;
+	background: url(assets/photo1.png);
+	background-size: cover;
+}
+
+#two {
+	grid-row: 1;
+	grid-column: 2/4;
+	margin: 0 0 16px 16px;
+	background: url(assets/photo2.png);
+	background-size: cover;
+}
+
+#three {
+	grid-row: 2;
+	grid-column: 1/3;
+	margin: 16px 16px 16px 0;
+	background: url(assets/photo3.png);
+	background-size: cover;
+}
+
+#four {
+	grid-row: 2/4;
+	grid-column: 3;
+	margin: 16px 0 0 16px;
+	background: url(assets/photo4.png);
+	background-size: cover;
+}
+
+#five {
+	grid-row: 3;
+	grid-column: 2;
+	margin: 16px 16px 0 16px;
+	background: url(assets/photo5.png);
+	background-size: cover;
+}
+
+#six {
+	grid-row: 3;
+	grid-column: 1;
+	margin: 16px 16px 0 0;
+	background: url(assets/photo6.png);
+	background-size: cover;
+}
+
+.footer {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	vertical-align: top;
+	color: #bdbdbd;
+	margin: 150px auto 24px;
+	cursor: default;
+}
+
+a {
+	text-decoration: none;
+	color: #b9bdcf;
+}
+
+a:hover {
+	color: #18a0fb;
+	cursor: default;
+}
+
+@media only screen and (max-width: 1000px) {
+	.footer {
+		margin: 0 auto 15px;
+	}
+
+	#gallery {
+		grid-auto-rows: minmax(110px, auto);
+		width: 651px;
+		height: 653px;
+		margin: 60px auto;
+	}
+
+	#one {
+		margin: 0 5px 5px 0;
+	}
+
+	#two {
+		margin: 0 0 5px 5px;
+	}
+
+	#three {
+		margin: 5px 5px 5px 0;
+	}
+
+	#four {
+		margin: 5px 0 0 5px;
+	}
+
+	#five {
+		margin: 5px 5px 0 5px;
+	}
+
+	#six {
+		margin: 5px 5px 0 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.footer {
+		margin: 0 auto 24px;
+	}
+
+	#gallery {
+		grid-auto-rows: minmax(110px, auto);
+		width: 451px;
+		height: 453px;
+		margin: 50px auto;
+	}
+
+	#one {
+		margin: 0 3px 3px 0;
+	}
+
+	#two {
+		margin: 0 0 3px 3px;
+	}
+
+	#three {
+		margin: 3px 3px 3px 0;
+	}
+
+	#four {
+		margin: 3px 0 0 3px;
+	}
+
+	#five {
+		margin: 3px 3px 0 3px;
+	}
+
+	#six {
+		margin: 3px 3px 0 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#profile {
+		margin: 18px auto 0;
+		width: 142px;
+	}
+	
+	#pfp {
+		width: 102px;
+		margin: 13px auto 0;
+	}
+	
+	#artist-name {
+		margin: 11.24px auto 0;
+		width: 121px;
+		height: 19px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	
+	#artist-loc {
+		margin: 4px auto 0;
+		width: 143px;
+		height: 11px;
+		font-size: 10px;
+		line-height: 12px;
+	}
+	
+	#stats {
+		width: 260px;
+		height: 52px;
+		margin: 12px auto 0;
+	}
+	
+	.stat-box {
+		width: 78px;
+		height: 36px;
+		margin: 10px 12px 0 0;
+		padding: 10px 0;
+		border-radius: 12px;
+	}
+	
+	.nos {
+		width: 48px;
+		height: 16px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.about {
+		width: 75px;
+		height: 20px;
+		font-size: 12px;
+		line-height: 15px;
+	}
+	
+	.footer {
+		margin: 0 auto 14px;
+	}
+
+	#gallery {
+		grid-auto-rows: minmax(110px, auto);
+		width: 351px;
+		height: 353px;
+		margin: 45px auto;
+	}
+
+	#one {
+		margin: 0 2px 2px 0;
+	}
+
+	#two {
+		margin: 0 0 2px 2px;
+	}
+
+	#three {
+		margin: 2px 2px 2px 0;
+	}
+
+	#four {
+		margin: 2px 0 0 2px;
+	}
+
+	#five {
+		margin: 2px 2px 0 2px;
+	}
+
+	#six {
+		margin: 2px 2px 0 0;
+	}
+}
