@@ -39,7 +39,7 @@
   <img src = "assets/Screenshot-mobile.jpeg" width = "50%">
 </p>
 
-Challenge was to create ***my gallery page*** following the design given in website. The page should be responsive.
+Challenge was to create ***my gallery page*** following the design given on the website. The page should be responsive.
 
 ### Built With
 
