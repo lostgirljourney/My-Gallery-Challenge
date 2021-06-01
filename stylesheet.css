@@ -324,6 +324,7 @@ a:hover {
 	
 	.footer {
 		margin: 50px auto 10px;
+		padding-top: 50px;
 	}
 
 	#gallery {
