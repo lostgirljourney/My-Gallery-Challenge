@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/lostgirljourney/My-Gallery-Challenge">
+    <a href="https://devchallenges.io/solutions/m6JcrzaU8gw1yulySsxA">
       Solution
     </a>
     <span> | </span>
